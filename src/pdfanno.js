@@ -322,7 +322,7 @@ function setupUI () {
 function getDefaultPDFURL () {
   // e.g. https://paperai.github.io:80/pdfanno/pdfs/P12-1046.pdf
   const pathnames = location.pathname.split('/')
-  const pdfURL = location.protocol + '//' + location.hostname + ':' + location.port + pathnames.slice(0, pathnames.length - 1).join('/') + '/pdfs/P12-1046.pdf'
+  const pdfURL = location.protocol + '//' + location.hostname + ':' + location.port + pathnames.slice(0, pathnames.length - 1).join('/') + '/pdfs/28.pdf'
   // console.log(location.pathname, pathnames, pdfURL)
   return pdfURL
 }

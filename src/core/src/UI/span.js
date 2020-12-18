@@ -173,6 +173,16 @@ export function createSpan ({ text = null, zIndex = 10, color = null }) {
       selectedText
     })
 
+    window.parent.window.postMessage({
+      rects     : mergedRect,
+      page      : currentPage,
+      text,
+      zIndex,
+      color,
+      textRange : [ startPosition, endPosition ],
+      selectedText
+    })
+
     // Remove user selection.
     if (spanAnnotation) {
       spanAnnotation.destroy()
